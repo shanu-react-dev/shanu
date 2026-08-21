@@ -15,6 +15,9 @@ import MernStack from "./components/courses/mern-stack/MernStack";
 import JSFullStack from "./components/courses/js-fullstack/JSFullStack";
 import PyFullStack from "./components/courses/python-fullstack/PyFullStack";
 import AllCourses from "./components/courses/all-courses/AllCourses";
+import Register from "./components/account/signup-form/Register";
+import Contact from "./pages/contact/Contact";
+import About from "./pages/about/About";
 //! Lazy Loading for Courses component
 let LazyCourses = React.lazy(() => import("./components/courses/Courses"));
 
@@ -87,6 +90,18 @@ const App = () => {
               element: <AllCourses />,
             },
           ],
+        },
+        {
+          path: "/register",
+          element: <Register />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+        {
+          path: "/about",
+          element: <About />,
         },
       ],
     },
