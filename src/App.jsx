@@ -18,6 +18,8 @@ import AllCourses from "./components/courses/all-courses/AllCourses";
 import Register from "./components/account/signup-form/Register";
 import Contact from "./pages/contact/Contact";
 import About from "./pages/about/About";
+import AOSContext from "./contexts/AOS-Context/AOSContext";
+import Login from "./components/account/login-form/Login";
 //! Lazy Loading for Courses component
 let LazyCourses = React.lazy(() => import("./components/courses/Courses"));
 
@@ -93,7 +95,15 @@ const App = () => {
         },
         {
           path: "/register",
-          element: <Register />,
+          element: (
+            <AOSContext>
+              <Register />
+            </AOSContext>
+          ),
+        },
+        {
+          path: "/login",
+          element: <Login />,
         },
         {
           path: "/contact",

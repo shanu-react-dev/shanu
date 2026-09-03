@@ -1,0 +1,15 @@
+<svg width="360" height="140" viewBox="0 0 360 140" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .top { font-family: 'Poppins', Arial, Helvetica, sans-serif; font-weight: 700; font-size: 42px; fill: #1a1a1a; }
+    .bottom { font-family: 'Poppins', Arial, Helvetica, sans-serif; font-weight: 600; font-size: 28px; fill: #e8352c; }
+    .code { font-family: 'DejaVu Sans Mono', 'Courier New', monospace; font-weight: bold; font-size: 32px; fill: #f5a623; }
+  </style>
+
+  <!-- Top line: C </>DE -->
+  <text x="10" y="50" class="top">C</text>
+  <text x="50" y="50" class="code">&lt;/&gt;</text>
+  <text x="120" y="50" class="top">DE</text>
+
+  <!-- Bottom line: Coode Auraa -->
+  <text x="10" y="95" class="bottom">Coode Auraa</text>
+</svg>

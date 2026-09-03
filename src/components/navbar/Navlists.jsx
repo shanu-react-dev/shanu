@@ -16,7 +16,8 @@ const Navlists = () => {
              after:origin-left after:scale-x-0
              after:bg-[#EF2027]
              after:transition-transform after:duration-300
-             hover:after:scale-x-100"
+             hover:after:scale-x-100 font-bold"
+            key={index}
           >
             <li>{ele.label}</li>
           </Link>

@@ -1,11 +1,13 @@
-import React from "react";
 import Logo from "./Logo";
 import Navlists from "./Navlists";
 import Button from "../../reusable-components/Button";
 
 const Navbar = () => {
   return (
-    <div className="h-14 w-full flex justify-evenly items-center">
+    <div
+      className="h-14 w-full flex justify-evenly items-center"
+      data-aos="fade-down"
+    >
       <Logo />
       <Navlists />
       <Button
